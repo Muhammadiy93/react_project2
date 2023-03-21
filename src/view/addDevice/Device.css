@@ -16,7 +16,7 @@
   border-radius: 10px;
 }
 
-.addRegistr span {
+.addRegistr .addRegistrSpan {
   font-size: 24px;
   font-weight: 700;
   color: #0B2261;
@@ -26,7 +26,7 @@
   justify-content: space-around;
 }
 
-.addRegistr input {
+.addRegistr .addRegistrInput {
   width: 346px;
   height: 40px;
   color: #0B2261;
@@ -53,7 +53,7 @@
       flex-direction: column;
       align-items: center;
   }
-  .addRegistr input {
+  .addRegistr .addRegistrInput {
     width: 300px;
     
   }
@@ -84,7 +84,7 @@
 
 
 
-.xizmatlar-card span {
+.xizmatlar-card .xizmatlarCardSpanpan {
   font-size: 26px;
   font-weight: 700;
   line-height: 46px;

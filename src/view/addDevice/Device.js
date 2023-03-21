@@ -10,18 +10,18 @@ function addDevice() {
         <form className="addRegistr w-100 p-5">
           <div className="addDoktor-haqida d-flex">
             <div className="addIsmi">
-              <span className="">Xizmat haqida m'alumot kiriting</span>
+              <span className="addRegistrSpan">Xizmat haqida m'alumot kiriting</span>
               <input type="text"
-                className="form-control mt-4 mb-4 ms-3"
+                className="form-control mt-4 mb-4 ms-3 addRegistrInput"
                 placeholder="Ismi..."
                 name="fullname_doc"
 
               />
             </div>
             <div className="addFamiliya">
-              <span>Xizmat narxlarini kiriting</span>
+              <span  className="addRegistrSpan">Xizmat narxlarini kiriting</span>
               <input type="text"
-                className="form-control mt-4 mb-4 ms-3"
+                className="form-control mt-4 mb-4 ms-3 addRegistrInput"
                 placeholder="Familiyasi..."
                 name="doctor_sourname"
 
@@ -30,18 +30,18 @@ function addDevice() {
           </div>
           <div className="addxizmat-haqida d-flex">
             <div className="addMalumot">
-              <span className="">Doktor Malumotlari</span>
+              <span className=" addRegistrSpan">Doktor Malumotlari</span>
               <input type="text"
-                className="form-control mt-4 mb-4 ms-3"
+                className="form-control mt-4 mb-4 ms-3 addRegistrInput"
                 placeholder="Xizmat nomi..."
                 name="service_type"
 
               />
             </div>
             <div className="addNarx">
-              <span className=""><br /></span>
+              <span  className="addRegistrSpan"><br /></span>
               <input type="text"
-                className="form-control mt-4 mb-4 ms-3"
+                className="form-control mt-4 mb-4 ms-3 addRegistrInput"
                 placeholder="Narxi..."
                 name="service_price"
 
@@ -50,18 +50,18 @@ function addDevice() {
           </div>
           <div className="addxizmat-haqida d-flex">
             <div className="addMalumot">
-              <span className="">Login va parol</span>
+              <span className="addRegistrSpan">Login va parol</span>
               <input type="text"
-                className="form-control mt-4 mb-4 ms-3"
+                className="form-control mt-4 mb-4 ms-3 addRegistrInput"
                 placeholder="Login..."
                 name="doctor_login"
 
               />
             </div>
             <div className="addNarx">
-              <span><br /></span>
+              <span  className="addRegistrSpan"><br /></span>
               <input type="text"
-                className="form-control mt-4 mb-4 ms-3"
+                className="form-control mt-4 mb-4 ms-3 addRegistrInput"
                 placeholder="Parol..."
                 name="doctor_parol"
 
@@ -87,11 +87,11 @@ function addDevice() {
             <div className="col-md-6" >
               <div className="xizmatlar-card p-2">
                 <div className="card-item p-2 ms-4">
-                  <span className="pb-4 pt-4 text-capitalize">Psixolog</span><br />
-                  <span className="narx card-item-size">Narxi :  so'm</span><br />
-                  <span className="doctor card-item-size text-capitalize">Doktor:   </span><br />
-                  <span className="login card-item-size">Login : </span><br />
-                  <span className="parol card-item-size">Parol : </span>
+                  <span className="pb-4 pt-4 text-capitalize xizmatlarCardSpan">Psixolog</span><br />
+                  <span className="narx card-item-size xizmatlarCardSpan">Narxi :  so'm</span><br />
+                  <span className="doctor card-item-size text-capitalize  xizmatlarCardSpan">Doktor:   </span><br />
+                  <span className="login card-item-size  xizmatlarCardSpan">Login : </span><br />
+                  <span className="parol card-item-size xizmatlarCardSpan">Parol : </span>
                 </div>
                 <div className="xizmatlar-btn m-0 p-0 d-flex justify-content-end me-5">
                   <div className="btn rounded-pill p-2 w-25 xizmatlar-btn1">Tahrirlash</div>
