@@ -1,0 +1,63 @@
+.wrapper {
+    background-color: white;
+}
+
+.tabletForm1 {
+    border: 1px solid black;
+    border-radius: 6px;
+}
+
+.tabletForm1 .col-md-5 input{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 400px;
+}
+
+.tabletForm1 .col-md-5 .qwe {
+    margin-bottom: 30px;
+}
+
+.container .xat {
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 80px;
+    margin-bottom: 10px;
+}
+
+.container .rInp {
+    margin-left: 106px;
+    width: 950px;
+} 
+
+.container .rXat1 {
+    display: inline-block;
+    margin-left: 80px;
+}
+
+.container .rXat2 {
+    margin-left: 80px;
+    color: #0B2261 ;
+}
+
+.container .rBtn {
+    margin-left: 580px;
+    border-radius: 6px;
+    background-color: #0B2261;
+    color: white;
+}
+
+.container .rBtn:hover {
+    background-color: white;
+    color: #0B2261;
+}
+
+.container .rBtn1 {
+    background-color: #0B2261;
+    color: white;
+    margin-left: 570px;
+}
+
+.container .footWord1 {
+    color: black;
+    margin-left: 500px;
+}
