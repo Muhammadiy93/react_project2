@@ -6,6 +6,7 @@ import Register from '../view/register/Register'
 import Service from '../view/service/Service'
 import Table from '../view/table/Table'
 import Navbar from '../components/navbar/Navbar'
+import addDevice from '../view/addDevice/Device'
 
 
 function Approuter() {
@@ -14,6 +15,7 @@ function Approuter() {
         <Navbar/>
         <Routes>
             <Route path='/' element={<Home/>}/>
+            <Route path='/addDevice' element={<addDevice/>}/>
             <Route path='/chart' element = {<Chart/>}/>
             <Route path='/register' element = {<Register/>}/>
             <Route path='/service' element = {<Service/>}/>
