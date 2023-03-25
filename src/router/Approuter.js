@@ -7,7 +7,7 @@ import Service from '../view/service/Service'
 import Table from '../view/table/Table'
 import Navbar from '../components/navbar/Navbar'
 import addDevice from '../view/addDevice/Device'
-import Login from '../view/login/login'
+import Login from '../view/login/loginPage'
 
 
 function Approuter() {
