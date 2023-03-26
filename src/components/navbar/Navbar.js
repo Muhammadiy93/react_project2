@@ -30,9 +30,7 @@ function Navbar() {
                     <li className="nav-item mx-4">
                     <Link className="nav-link nav_a" to='/Table'>Table</Link>
                     </li>
-                    <li className="nav-item mx-4">
-                    <Link className="nav-link nav_a" to='/Login'>Log in</Link>
-                    </li>
+                   
                     <h5 className='logout'><AiOutlineLogout/></h5>
                     
                 </ul>
