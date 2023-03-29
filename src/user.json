@@ -3,6 +3,9 @@
         "id": 1,
         "firstName": "Mahmud",
         "lastName": "Olimov",
-        "address": "Rishton tumani, Oqyer qishlog'i"
+        "address": "Rishton tumani, Oqyer qishlog'i",
+        "birthday" : "2000.06.03",
+        "service" : 2,
+        "price" : 80000
     }
 ]

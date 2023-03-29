@@ -22,13 +22,10 @@ function Navbar() {
                     <Link className="nav-link nav_a" to='/chart'>Chart</Link>
                     </li>
                     <li className="nav-item mx-4">
-                    <Link className="nav-link nav_a" to='/Register'>Register</Link>
+                    <Link className="nav-link nav_a" to='/service'>Service</Link>
                     </li>
                     <li className="nav-item mx-4">
-                    <Link className="nav-link nav_a" to='/Service'>Service</Link>
-                    </li>
-                    <li className="nav-item mx-4">
-                    <Link className="nav-link nav_a" to='/Table'>Table</Link>
+                    <Link className="nav-link nav_a" to='/table'>Table</Link>
                     </li>
                    
                     <h5 className='logout'><AiOutlineLogout/></h5>
