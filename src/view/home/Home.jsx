@@ -1,43 +1,11 @@
 import './Home.css'
-import React from 'react'
+import React , {useState , useEffect} from 'react'
 import Rasim1 from './medical.png'
 import Button from '../../components/home_button'
+import Services from "../../doctor.json"
+function Home(props) {  
+  const [baza , setBaza] = useState(Services)
 
-function Home(props) {
-  let arr = [
-    {
-      id: 1,
-      title: "Masaj"
-    },
-    {
-      id: 2,
-      title: "Psixolog"
-    },
-    {
-      id: 3,
-      title: "Pediator"
-    },
-    {
-      id: 4,
-      title: "Rengen"
-    },
-    {
-      id: 5,
-      title: "UZI"
-    },
-    {
-      id: 6,
-      title: "EKG"
-    },
-    {
-      id: 7,
-      title: "Genikolog"
-    },
-    {
-      id: 8,
-      title: "Lor"
-    },
-  ]
   return (
     <div>
       <div>
@@ -49,10 +17,13 @@ function Home(props) {
         <div class="container justify-content-center ">
           <div class="row gy-5 ">
               {
-                arr.map((elem, index) => {
+                baza.map((elem, index) => {
                   return(
                     <div className="col-md-6" key={index}>
-                      <Button name={elem.title}/>
+                      <Button 
+                        name={elem.title}
+                        service={elem}
+                      />
                     </div>
                   )
                 })
