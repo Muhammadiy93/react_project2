@@ -7,5 +7,14 @@
         "lastName": "Olimov",
         "login": "olimov",
         "parol": "olimov1234"
+    },
+    {
+        "id": 2,
+        "title": "Hijoma",
+        "price": 80000,
+        "firstName": "Alisher",
+        "lastName": "Aliyev",
+        "login": "alisher123",
+        "parol": "alisher123"
     }
 ]
