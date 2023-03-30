@@ -1,9 +1,14 @@
 import './Table.css'
 import React from 'react'
+import Navbar from '../../components/navbar/Navbar'
 
 function Table() {
   return (
-    <div>Table</div>
+    <>
+    <Navbar/>
+      <div>Table</div>
+    </>
+    
   )
 }
 
