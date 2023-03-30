@@ -3,11 +3,13 @@ import React , {useState , useEffect} from 'react'
 import Rasim1 from './medical.png'
 import Button from '../../components/home_button'
 import Services from "../../doctor.json"
+import Navbar from '../../components/navbar/Navbar'
 function Home(props) {  
   const [baza , setBaza] = useState(Services)
 
   return (
     <div>
+      <Navbar/>
       <div>
         <img src={Rasim1} alt="" className='home_img' />
         <h4 className='home_h4'>MEDICAL.NET</h4>

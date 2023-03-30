@@ -1,9 +1,11 @@
 import './Register.css'
 import React from 'react'
+import Navbar from '../../components/navbar/Navbar'
 
 function Register() {
   return (
    <>
+   <Navbar/>
     <div className='r_wrapper'>
       <div className="container">
           <h2 className='top_word1'>Psixolog</h2>

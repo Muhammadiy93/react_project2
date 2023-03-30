@@ -2,6 +2,7 @@ import './Chart.css'
 import './Barchart'
 import { PieChart, Pie, Cell, ResponsiveContainer, } from 'recharts';
 import Barchart from './Barchart';
+import Navbar from '../../components/navbar/Navbar'
 
 const data = [
   { name: 'Psixolog ', value: 5764 },
@@ -35,6 +36,7 @@ export default function Chart () {
  
     return (
         <>
+        <Navbar/>
             <div className='chart_wrapper'>
             <div className="row pie_row">
                 <h2 className='dashboard_title'>Dashboard</h2>
