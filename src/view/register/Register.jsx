@@ -7,18 +7,7 @@ import Navbar from '../../components/navbar/Navbar'
 
 function Register() {
   const navigate = useNavigate()
-  const [patient , setPatient] = useState({
-    id : BASA.length + 1,
-    firstname : "",
-    lastname : "",
-    birthday : "",
-    address : "",
-    service: "1",
-    price: 5000,
-  })
-
   const [locInf, setLocInf] = useState('')
-  console.log(locInf, 'dsoaugfuijashgiyu');
   useEffect(()=>{
     const localInfGet = () => {
       let locInfo = JSON.parse(localStorage.getItem("service"))
@@ -28,12 +17,24 @@ function Register() {
     localInfGet()
   }, []);
   
+  const [patient , setPatient] = useState({
+    id : BASA.length + 1,
+    firstname : "",
+    lastname : "",
+    birthday : "",
+    address : "",
+    service: "",
+    price: 0,
+  })
+
  
     
 
 
   const sendInfo = (e) => {
     e.preventDefault()
+    patient.service=locInf.id
+    patient.price=locInf.price
     BASA.push(patient)
     navigate('/table')
     console.log(BASA);
