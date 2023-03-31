@@ -2,10 +2,11 @@
     margin-left: 120px;
 }
 .logout{
-    margin-left: 700px;
+    margin-left: 800px;
     color: #ffffff;
     cursor: pointer;
     margin-top: 5px;
+    font-size: 19px;
 }
 .navbar{
     background: #0B2261;
