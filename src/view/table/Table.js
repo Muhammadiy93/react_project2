@@ -2,6 +2,7 @@ import './Table.css'
 import DOCTOR from '../../doctor.json'
 import USER from '../../user.json'
 import React, { useState } from 'react'
+import Navbar from '../../components/navbar/Navbar'
 
 function Table() {
   const [baza, setBaza] = useState(DOCTOR)
@@ -9,6 +10,7 @@ function Table() {
 
   return (
     <div>
+      <Navbar/>
       <div className="row">
           <div className="col">
             {baza.map((elem, index) => {
