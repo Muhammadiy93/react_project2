@@ -7,13 +7,10 @@ import Table from '../view/table/Table'
 import Service from '../view/service/Service'
 import Login from '../view/login/loginPage'
 
-
-
 function Approuter () {
 
   return (
     <>
-        
         <Routes>
             <Route path='/' element={<Home/>}/>
             <Route path='/login' element={<Login/>}/>
@@ -21,6 +18,7 @@ function Approuter () {
             <Route path='/register' element = {<Register/>}/>
             <Route path='/service' element = {<Service/>}/>
             <Route path='/table' element = {<Table/>}/>
+            <Route path='/login' element = {<Login/>}/>
         </Routes>
     </>
   )
