@@ -16,7 +16,10 @@ function Navbar() {
                 <div className="collapse navbar-collapse" id="navbarNav">
                 <ul className="navbar-nav">
                     <li className="nav-item mx-4">
-                    <Link className="nav-link nav_a" to='/'>Home</Link>
+                    <Link className="nav-link nav_a" to='/home'>Home</Link>
+                    </li>
+                    <li className="nav-item mx-4">
+                    <Link className="nav-link nav_a" to='/history'>History</Link>
                     </li>
                     <li className="nav-item mx-4">
                     <Link className="nav-link nav_a" to='/chart'>Chart</Link>
@@ -27,8 +30,7 @@ function Navbar() {
                     <li className="nav-item mx-4">
                     <Link className="nav-link nav_a" to='/table'>Table</Link>
                     </li>
-                   
-                    <Link className='logout' to ='/login'> <AiOutlineLogout/> </Link>
+                    <Link className='logout' to ='/'> <AiOutlineLogout/> </Link>
                     
                 </ul>
                 </div>
