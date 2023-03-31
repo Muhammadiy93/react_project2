@@ -26,6 +26,10 @@
     border: 1px solid #0B2261
 }
 
+.tablet_form .form-control {
+    display: inline-block;
+}
+
 .tab_top_txt {
     display: inline-block;
     margin-left: 72px;
@@ -43,6 +47,7 @@
     height: 40px;
     margin-left: 92px;
     margin-top: 19px;
+    border: 1px solid #0B2261
 }
 
 
@@ -50,6 +55,7 @@
     width: 347px;
     height: 40px;
     margin-left: 112px;
+    border: 1px solid #0B2261
 }
 
 .tab_inp_2{
@@ -57,6 +63,7 @@
     margin-left: 92px;
     width: 346px;
     height: 40px;
+    border: 1px solid #0B2261
 }
 
 .tab_inp_3 {
@@ -64,6 +71,7 @@
     margin-top: 18px;
     width: 805px;
     height: 40px;
+    border: 1px solid #0B2261
 }
 
 .tab_txt1 {
@@ -90,7 +98,7 @@
 }
 
 .tab_btn{
-    margin-top: 54px;
+    margin-top: 40px;
     margin-left: 390px;
     width: 300px;
     height: 70px;
@@ -108,8 +116,8 @@
 }
 
 .tab_btn:hover{
-    color: #0B2261;
-    background-color: white;
+    color: greenyellow;
+    background-color: #0b2e91;
     text-shadow: none;
     box-shadow: none;
     transition: 0.5s ease;
@@ -132,8 +140,8 @@
 }
 
 .btm_btn:hover{
-    color: #0B2261;
-    background-color: white;
+    color: whitesmoke;
+    background-color: #0b2e91;
     text-shadow: none;
     box-shadow: none;
     transition: 1s ease;
@@ -143,17 +151,4 @@
     margin-top: 90px;
     margin-bottom: 35px;
     margin-left: 491px;
-}
-
-.tab_inp_0::placeholder {
-    padding-left: 12px;
-}
-.tab_inp_1::placeholder{
-    padding-left: 12px;
-}
-.tab_inp_2::placeholder{
-    padding-left: 12px;
-}
-.tab_inp_3::placeholder{
-    padding-left: 12px;
 }
