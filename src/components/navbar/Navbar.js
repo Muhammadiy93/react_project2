@@ -28,7 +28,7 @@ function Navbar() {
                     <Link className="nav-link nav_a" to='/table'>Table</Link>
                     </li>
                    
-                    <h5 className='logout'><AiOutlineLogout/></h5>
+                    <Link className='logout' to ='/login'> <AiOutlineLogout/> </Link>
                     
                 </ul>
                 </div>

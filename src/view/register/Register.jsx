@@ -2,6 +2,8 @@ import './Register.css'
 import React , {useState , useEffect} from 'react'
 import BASA from '../../user.json'
 import { useNavigate } from 'react-router-dom'
+import Navbar from '../../components/navbar/Navbar'
+
 
 function Register() {
   const navigate = useNavigate()
@@ -43,6 +45,7 @@ function Register() {
 
   return (
    <>
+   <Navbar/>
     <div className='r_wrapper'>
       <div className="container">
           <h2 className='top_word1'>{locInf.title}</h2>

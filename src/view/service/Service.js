@@ -1,9 +1,11 @@
 import "./Service.css";
 import React from "react";
+import Navbar from "../../components/navbar/Navbar";
 
 function Service() {
   return (
     <>
+    <Navbar/>
       <div className="container">
         <div className="xizmatlar-title pb-4 pt-4">
           <span className="titleTarix fs-3">Yangi Qo'shish</span>
