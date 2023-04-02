@@ -13,7 +13,7 @@ function Login() {
         let result = Doctors.find((item)=> item.parol == user.parol && item.login == user.login )
         if(result){
             localStorage.setItem("user" , result)
-            navigator("/")
+            navigator("/home")
         }else{
             alert("login/parol hato")
         }
@@ -22,12 +22,17 @@ function Login() {
         setUser({...user , [e.target.name] : e.target.value})
     }
     console.log(login);
+    
     return(
         <>
             <div className="logOut">
                 <div className="home_login">
+                    <div class="form-check form-switch check_log">
+                        <h6 className="check_doctor">Doctor</h6>
+                        <input class="form-check-input" type="checkbox"  id="flexSwitchCheckDefault" />
+                    </div>
                     <h1 className="log">Log in</h1>
-                    <input type="text" className="form-control contr" id="" placeholder="Login..." 
+                   <input type="text" className="form-control contr" id="" placeholder="Login..." 
                     name="login"
                     value={user.login}
                     onChange={changeHandler}
