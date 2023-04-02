@@ -32,3 +32,12 @@
     letter-spacing: 0em;
     text-align: left;
 }
+.check_log{
+    position: absolute;
+    margin-left: 430px;
+    margin-top: 95px;
+}
+.check_doctor{   
+    position: absolute;
+    margin-left: -95px;
+}
