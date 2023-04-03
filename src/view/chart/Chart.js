@@ -3,37 +3,57 @@ import './Barchart'
 import { PieChart, Pie, Cell, ResponsiveContainer, } from 'recharts';
 import Barchart from './Barchart';
 import Navbar from '../../components/navbar/Navbar'
-
-const data = [
-  { name: 'Psixolog ', value: 5764 },
-  { name: 'UZI', value: 3647 },
-  { name: 'Pediator ', value: 2142 },
-  { name: 'Ginekolog', value: 953 },
-  { name: 'EKG', value: 931 },
-  { name: 'Masaj ', value: 895 },
-  { name: 'Lor ', value: 845 },
-  { name: 'Rengen  ', value: 785 }
-];
-
-const COLORS = ['#0CBD0F', '#ADFF00', '#FFE500', '#FF6D00', '#8000FF', '#3300FF', '#FE0000', '#00FFFF'];
-
-const RADIAN = Math.PI / 180;
-const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, percent, index }) => {
-  const radius = innerRadius + (outerRadius - innerRadius) * 0.5;
-  const x = cx + radius * Math.cos(-midAngle * RADIAN);
-  const y = cy + radius * Math.sin(-midAngle * RADIAN);
-
-  return (
-    <text x={x} y={y} fill="white" textAnchor={x > cx ? 'start' : 'end'} dominantBaseline="central">
-    
-    </text>
-  );
-};
-
-
+import Users from '../../user.json'
+import { useEffect } from 'react';
 
 export default function Chart () {
- 
+    const data = [
+        { name: 'Psixolog ', value: 0 },
+        { name: 'UZI', value: 0 },
+        { name: 'Pediator ', value: 0 },
+      { name: 'Ginekolog', value: 0 },
+      { name: 'EKG', value: 0 }
+    ];
+
+    useEffect(()=>{
+        const hisob = () => {
+            for(let i=0; i<Users.length;i++){
+                if(Users[i].service==1){
+                    data[0].value+=1
+                }
+                if(Users[i].service==2){
+                    data[1].value+=1
+                }
+                if(Users[i].service==3){
+                    data[2].value+=1
+                }
+                if(Users[i].service==4){
+                    data[3].value+=1
+                }
+                if(Users[i].service==5){
+                    data[4].value+=1
+                }
+            }
+        }
+        hisob()
+    },[])
+
+    console.log(data)
+
+    const COLORS = ['#0CBD0F', '#ADFF00', '#FFE500', '#FF6D00', '#8000FF'];
+    
+    const RADIAN = Math.PI / 180;
+    const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, percent, index }) => {
+        const radius = innerRadius + (outerRadius - innerRadius) * 0.5;
+        const x = cx + radius * Math.cos(-midAngle * RADIAN);
+        const y = cy + radius * Math.sin(-midAngle * RADIAN);
+        
+        return (
+            <text x={x} y={y} fill="white" textAnchor={x > cx ? 'start' : 'end'} dominantBaseline="central">
+        
+        </text>
+      );
+    };
     return (
         <>
         <Navbar/>
@@ -64,38 +84,19 @@ export default function Chart () {
                     </ResponsiveContainer>
                 </div>
                 <div className="col-md-5 pie_pieces">
-                    <div className="pie_p1 position-relative my-2">
-                        <span className='pie_color1'></span>
-                        <p className='pie_p_name1'>Psixolog 5764 marta</p>
+                    <div className="row">
+                    {
+                        data.map((item,index)=> {
+                            return(
+                                <div className="my-2 col-md-5" key={index}>
+                                    <span className='pie_color1'></span>
+                                    <p className=''>{item.name}- {item.value} marta</p>
+                                </div>
+                            )
+                        })
+                    }
                     </div>
-                    <div className="pie_p2 position-relative my-2">
-                        <span className='pie_color2'></span>
-                        <p className='pie_p_name2'> UZI  3647 marta</p>
-                    </div>
-                    <div className="pie_p3 position-relative my-2">
-                        <span className='pie_color3'></span>
-                        <p className='pie_p_name3'> Pediator 2142 marta </p>
-                    </div>
-                    <div className="pie_p4 position-relative my-2">
-                        <span className='pie_color4'></span>
-                        <p className='pie_p_name4'> Ginekolog 953 marta </p>
-                    </div>
-                    <div className="pie_p5 position-relative my-2">
-                        <span className='pie_color5'></span>
-                        <p className='pie_p_name5'> EKG 931 marta</p>
-                    </div>
-                    <div className="pie_p6 position-relative my-2">
-                        <span className='pie_color6'></span>
-                        <p className='pie_p_name6'>Masaj  895 marta</p>
-                    </div>
-                    <div className="pie_p7 position-relative my-2">
-                        <span className='pie_color7'></span>
-                        <p className='pie_p_name7'> Lor 845 marta</p>
-                    </div>
-                    <div className="pie_p8 position-relative my-2">
-                        <span className='pie_color8'></span>
-                        <p className='pie_p_name8'>Rengen 785 marta</p>
-                    </div>
+                    
                 </div>
             </div>
             <div className='bar'>
