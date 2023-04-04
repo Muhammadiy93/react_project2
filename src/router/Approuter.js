@@ -7,6 +7,7 @@ import Table from '../view/table/Table'
 import Service from '../view/service/Service'
 import Login from '../view/login/loginPage'
 import History from '../view/history/History'
+import addService from "../view/addDevice/Device"
 
 function Approuter () {
 
@@ -20,6 +21,7 @@ function Approuter () {
             <Route path='/service' element = {<Service/>}/>
             <Route path='/table' element = {<Table/>}/>
             <Route path='/history' element = {<History/>}/>
+            <Route path='/addservice' element = {<Device/>}/>
         </Routes>
     </>
   )
