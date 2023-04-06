@@ -18,19 +18,19 @@ export default function Chart () {
     useEffect(()=>{
         const hisob = () => {
             for(let i=0; i<Users.length;i++){
-                if(Users[i].service==1){
+                if(Users[i].service===1){
                     data[0].value+=1
                 }
-                if(Users[i].service==2){
+                if(Users[i].service===2){
                     data[1].value+=1
                 }
-                if(Users[i].service==3){
+                if(Users[i].service===3){
                     data[2].value+=1
                 }
-                if(Users[i].service==4){
+                if(Users[i].service===4){
                     data[3].value+=1
                 }
-                if(Users[i].service==5){
+                if(Users[i].service===5){
                     data[4].value+=1
                 }
             }
@@ -61,8 +61,9 @@ export default function Chart () {
             <div className="row pie_row">
                 <h2 className='dashboard_title'>Dashboard</h2>
                 <h6 className='pie_title'>So’ngi 30 kun ichida foydalanilgan xizmatylar</h6>
+                <div className='pie_container'>
                 <div className="col-md-5 pie_chart">
-                    <ResponsiveContainer>
+                    <ResponsiveContainer >
                         <PieChart width={600} height={600}>
                         <Pie
                             data={data}
@@ -83,13 +84,15 @@ export default function Chart () {
                         
                     </ResponsiveContainer>
                 </div>
+                </div>
+
                 <div className="col-md-5 pie_pieces">
                     <div className="row">
                     {
                         data.map((item,index)=> {
                             return(
                                 <div className="my-2 col-md-5" key={index}>
-                                    <span className='pie_color1'></span>
+                                    <span className='pie_color'></span>
                                     <p className=''>{item.name}- {item.value} marta</p>
                                 </div>
                             )
