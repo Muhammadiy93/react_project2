@@ -7,7 +7,7 @@ import Table from '../view/table/Table'
 import Service from '../view/service/Service'
 import Login from '../view/login/loginPage'
 import History from '../view/history/History'
-import addService from "../view/addDevice/Device"
+import Device from "../view/addDevice/Device"
 
 function Approuter () {
 
