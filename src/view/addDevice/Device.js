@@ -1,7 +1,7 @@
 import "./Device.css";
 import React, { useState, useEffect } from 'react';
 import Inf from "./inf";
-import Baza from "../doctor.json"
+import Baza from "../../doctor.json"
 
 function Device() {
   const [baza, setBaza] = useState(Baza)
